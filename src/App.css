@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.navigation_bar{
+  float:left;
+  margin:0;
+  padding:1em;
+  list-style:none;
+}
+#navbar_icons{
+  margin-right:0.5em;
+}
+.web_name{
+  font-size:1.5em;
+  text-align:center;
+}
+.options{
+  font-size:1.3em;
+  text-align:left;
+}
