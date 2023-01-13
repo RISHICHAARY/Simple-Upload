@@ -111,10 +111,8 @@ app.put("/getUsers" , (req , res) => {
 //-----------------------------------------------------------------Delete-------------------------------------------------------------------------
 
 app.put("/deleteMe" , (req , res)=>{
-    console.log(req.body.file)
     user_model.updateOne({_id:req.body.id} , {$set:{Files:req.body.file}} , (err , result)=>{
         if(err){console.log(err)}
-        console.log(result)
         res.send("Done");
     })
 });
